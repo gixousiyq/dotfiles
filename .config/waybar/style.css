@@ -1,0 +1,183 @@
+ @import '../../.cache/wal/colors-waybar.css';
+ * {
+    font-family:"JetBrainsMono nerd font"; 
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: rgba(40, 40, 40, 0.0);
+    transition-duration: .5s;
+   /* border: 2px solid @color10; */
+    border-radius: 5px;
+}
+
+ #workspaces {
+   padding-right: 4px;
+   padding-left: 4px;
+   margin-right: 4px;
+   margin-bottom: 4px;
+   margin-top: 4px; 
+   font-weight: Bold;
+   border-radius: 5px;
+   background: @background;
+}
+
+ #workspaces button {
+    color: @foreground;
+   /* border-radius: 10px; */
+   /* background-color: @color1; */
+    padding: 0px;
+    margin-left: 2px;
+    margin-right: 2px;
+} 
+
+ #workspaces button.urgent {
+    color: #E67E80;
+}
+
+ #workspaces button.focused {
+    color: @color1;
+    /*background-color: @color1; */
+    border-radius: 3px;
+} 
+
+#workspaces button:hover {
+   background-color: #E6B9C6;
+   color: black;
+   border-radius: 3px;
+}
+
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#language,
+#window,
+#custom-power,
+#custom-spotify,
+#custom-logo,
+#custom-cava {
+    padding: 0 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+   /* background: @foreground; */
+    color: @color1;
+}
+
+#clock {
+    background-color: @background;
+    border-radius: 0px 0px 0px 0px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+   /* margin-right: 4px; */
+    font-weight: bold;
+}
+
+#cpu {
+    font-weight: bold;
+    border-radius: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+#memory {
+    font-weight: bold;
+    border-radius: 0px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+#network {
+	  background-color: @background;
+	  border-radius: 5px 0px 0px 5px;
+          margin-top: 4px;
+          margin-bottom: 4px;
+} 
+
+ #network.disconnected {
+   /* background-color: #f53c3c; */
+} 
+
+#pulseaudio {
+    background-color: @background;
+    border-radius: 0px 0px 0px 0px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+#pulseaudio.muted {
+    color: #24273a;
+}
+
+#tray {
+   background-color: @background;
+   border-radius: 0px 5px 5px 0px;
+   margin-bottom: 3px;
+   margin-right: 4px;
+   margin-top: 4px;
+   padding: 0px 10px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+   /* background-color: #eb4d4b; */
+}
+
+#language {
+    background-color: @background; 
+    font-weight: bold;
+    border-radius: 0px 0px 0px 0px;
+    margin-top: 4px;
+   /* margin-right: 4px; */
+    margin-bottom: 4px;
+}
+
+#custom-power {
+    background-color: #343F44;
+    color: #A7C080;
+    border-radius: 15px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+}
+
+#custom-spotify {
+    background-color: #292c3c;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+}
+
+#custom-logo {
+    font-weight: bold;
+    border-radius: 5px 0px 0px 5px;
+    margin-top: 4px; 
+    margin-bottom: 4px;
+    margin-left: 4px;
+    background: @background;
+}
+
+#window {
+    font-weight: bold;
+    border-radius: 0px 10px 10px 0px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+#custom-cava {
+   margin-top: 4px;
+   margin-bottom: 4px;
+   border-radius: 0px 5px 5px 0px;
+   font-weight: bold;
+   background: @background;
+}

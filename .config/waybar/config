@@ -1,0 +1,28 @@
+{
+
+    "include": "~/.config/waybar/modules",
+    "layer": "top",
+    "exclusive": true,
+    "passthrough": false,
+    "position": "top",
+    "fixed-center": true,
+    "ipc": true,
+    "margin": 0,
+    "reload_style_on_change": true,
+
+    "modules-left": [
+    "custom/logo",
+    "clock",
+    "custom/cava",
+  ],
+    "modules-center": [
+	"sway/workspaces"
+     // "custom/spotify",
+    ],
+    "modules-right": [
+        "network",
+	"sway/language",
+	"pulseaudio",
+	"tray"
+    ],
+}

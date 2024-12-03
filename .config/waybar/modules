@@ -1,0 +1,162 @@
+{
+       "sway/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": true,
+        "format": "{icon}",
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+	    "6": [],
+	    "7": [],
+	    "8": []
+     },
+        "format-icons": {
+          "default": ""
+         }
+     },
+     // for names{names}:
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "format": "󰥔 {:%R}"
+    },
+
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{icon}",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected 󰤭",
+                "format-icons": [
+            "󰤯",
+            "󰤟",
+            "󰤢",
+            "󰤥",
+            "󰤨"
+        ]
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon} {volume}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["󰋋 ", "󰋋 ", "󰋋 "]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/media": {
+        "format": "{icon} {}",
+        "return-type": "json",
+        "max-length": 40,
+        "format-icons": {
+            "spotify": " ",
+            "default": "🎜 "
+        },
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+
+        "mpd": {
+        "format": "{stateIcon} {artist} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S})",
+        "format-disconnected": "Disconnected ",
+        "unknown-tag": "N/A",
+        "interval": 5,
+        "port": 7700,
+        "on-click": "mpc -p 7700 toggle",
+        "on-scroll-up": "mpc -p 7700 next",
+        "on-scroll-down": "mpc -p 7700 prev",
+        "consume-icons": {
+            "on": " "
+        },
+        "random-icons": {
+            "off": "<span color=\"#f53c3c\"></span> ",
+            "on": " "
+        },
+        "repeat-icons": {
+            "on": " "
+        },
+        "single-icons": {
+            "on": "1 "
+        },
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        },
+        "tooltip-format": "MPD (connected)",
+        "tooltip-format-disconnected": "MPD (disconnected)"
+    },
+
+      "sway/language": {
+        "padding": 10,
+        "max-length": 4
+    },
+
+    "sway/window": {
+    "format": " {} ",
+    "max-length": 30,
+    "separate-outputs": true,
+    "offscreen-css" : true,
+    "offscreen-css-text": "(inactive)"
+},
+
+    "custom/power": {
+    "format": "⏻",
+    "on-click": "systemctl poweroff"
+},
+
+
+    "custom/spotify": {
+        "interval": 1,
+        "exec": "~/.config/waybar/now-playing",
+        "on-click": "~/.config/waybar/play-next",
+        "on-click-right": "~/.config/waybar/play-previous",
+        "escape": true,
+        "max-length" : 20
+    },
+
+    "custom/logo": {
+      "format": "⏼",
+       "on-click": "~/.config/rofi/powermenu.sh"
+          },
+
+"custom/cava": {
+    "exec": "~/.config/waybar/cava.sh",
+    "format": "{}"
+    },
+
+  "memory" : {
+        "interval": 1,
+        "format": " {percentage}%"
+},
+
+      "cpu": {
+        "interval": 1,
+        "format": " {usage}%"
+  }
+}
