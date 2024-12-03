@@ -1,0 +1,40 @@
+* {
+    font: "JetBrainsMono nerd font Bold 20";
+}
+
+configuration {
+      location: 0;
+}
+
+inputbar {
+	enabled: false;
+}
+
+window {
+    padding: 0;
+    height: 264px;
+}
+
+listview {
+    lines: 2;
+    columns: 2;
+    margin: 0px;
+    border: 0px;
+}
+
+element {
+    enabled: true;
+    spacing: 0px;
+    margin: 0px;
+    padding: 32px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+element-text {
+    vertical-align: 0.0;
+    horizontal-align: 0.5;
+}
+
+@import "~/.cache/wal/colors-rofi-dark.rasi"

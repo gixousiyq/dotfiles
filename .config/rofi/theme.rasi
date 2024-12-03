@@ -1,0 +1,76 @@
+* {
+    background-color: @background;
+    color: @foreground;
+
+   font: "JetBrainsMono nerd font Bold 11";
+}
+
+window {
+    width: 420px;
+    height: 300px;
+    border: 2;
+    border-radius: 5;
+    border-color: @color10;
+}
+
+mainbox {
+   background-color: transparent;
+   padding: 20px;
+   children: [ "inputbar", "message", "listview", "mode-switcher" ];
+}
+
+message {
+    padding: 5px;
+}
+
+inputbar {
+    text-color: @foreground;
+    padding: 10px;
+    margin: 10px;
+    background-color: @background;
+    border-radius: 10px;
+}
+
+entry,prompt,case-indicator {
+  text-font: inherit;
+  text-color: @foreground;
+  background-color: transparent;
+}
+
+listview {
+    lines: 6;
+    padding: 8px;
+    background-color: transparent;
+}
+
+prompt {
+    enabled: true;
+    background-color: transparent;
+    text-color: inherit;
+}
+
+
+element {
+    padding: 8px;
+    color: @foreground;
+    font: inherit;
+    border-radius: 5;
+    background-color: transparent;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+element selected.normal {
+   background-color: @color2;
+   color: @background;
+}
+
+element-text, element-icon {
+    background-color: inherit;
+    color: inherit;
+}
+
+@import "~/.cache/wal/colors-rofi-dark.rasi"
