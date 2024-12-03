@@ -1,0 +1,86 @@
+{
+	"logo": {
+	 "type": "sixel",
+         "source": "~/.config/fastfetch/fetch.png",
+	 "width": 28,
+         "height": 15
+	},
+	"display": {
+        "separator": " -> ",
+        "constants": [
+            "──────────────────────────────"
+        ]
+},
+        "modules": [
+	{
+                    "type": "custom",
+            "format": " {#90}  {#31}  {#32}  {#33}  {#34}  {#35}  {#36}  {#37}  {#38}  {#39}"
+        },
+	{
+            "type": "os",
+            "key": "{icon} OS",
+            "keyColor": "blue"
+        },
+	{
+	    "type": "kernel",
+            "key": "│ ├",
+            "keyColor": "blue"
+        },
+	{
+	            "type": "packages",
+            "key": "│ ├󰏖",
+            "keyColor": "blue"
+        },
+	{
+            "type": "shell",
+            "key": "│ └",
+            "keyColor": "blue"
+        },
+	{
+            "type": "wm",
+            "key": " DE/WM",
+            "keyColor": "blue"
+        },
+	{
+            "type": "lm",
+            "key": "│ ├󰧨",
+            "keyColor": "blue"
+        },
+	{
+            "type": "terminal",
+            "key": "│ ├",
+            "keyColor": "blue"
+        },
+	{
+            "type": "title",
+            "key": "󰌢 PC",
+            "keyColor": "blue"
+        },
+	  {
+            "type": "cpu",
+            "key": "│ ├󰻠",
+            "keyColor": "blue"
+        },
+        {
+            "type": "gpu",
+            "key": "│ ├󰍛",
+            "keyColor": "blue"
+        },
+        {
+            "type": "disk",
+            "key": "│ ├",
+            "keyColor": "blue"
+        },
+        {
+            "type": "memory",
+            "key": "│ ├󰑭",
+            "keyColor": "blue"
+        },
+	{
+            "type": "display",
+            "key": "│ └󰍹",
+            "keyColor": "blue"
+        },
+
+    ]
+}
