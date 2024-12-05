@@ -5,20 +5,38 @@
 }
 
 window#waybar {
-    background-color: rgba(40, 40, 40, 0.0);
+    background-color: @background;
     transition-duration: .5s;
    /* border: 2px solid @color10; */
-    border-radius: 5px;
+    border-radius: 0px;
+}
+
+#tags {
+   padding-right: 4px;
+   padding-left: 4px;
+   font-weight: Bold;
+}
+
+#tags button {
+  color: @foreground;
+  padding: 0px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+
+#tags button.focused {
+    color: @color1;
 }
 
  #workspaces {
    padding-right: 4px;
    padding-left: 4px;
    margin-right: 4px;
-   margin-bottom: 4px;
-   margin-top: 4px; 
+ /*  margin-bottom: 4px;
+   margin-top: 4px; */
    font-weight: Bold;
-   border-radius: 5px;
+   border-radius: 0px;
    background: @background;
 }
 
@@ -39,12 +57,15 @@ window#waybar {
     color: @color1;
     /*background-color: @color1; */
     border-radius: 3px;
-} 
+}
+ #workspaces button.occupied {
+   color: @background;
+}
 
 #workspaces button:hover {
    background-color: #E6B9C6;
    color: black;
-   border-radius: 3px;
+   border-radius: 0px;
 }
 
 #clock,
@@ -59,18 +80,17 @@ window#waybar {
 #custom-logo,
 #custom-cava {
     padding: 0 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 0px;
+    padding-bottom: 0px;
    /* background: @foreground; */
     color: @color1;
 }
 
 #clock {
     background-color: @background;
-    border-radius: 0px 0px 0px 0px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-   /* margin-right: 4px; */
+    border-radius: 0px;
+   /* margin-top: 4px;
+    margin-bottom: 4px; */
     font-weight: bold;
 }
 
@@ -91,8 +111,8 @@ window#waybar {
 #network {
 	  background-color: @background;
 	  border-radius: 5px 0px 0px 5px;
-          margin-top: 4px;
-          margin-bottom: 4px;
+         /* margin-top: 4px;
+          margin-bottom: 4px; */
 } 
 
  #network.disconnected {
@@ -102,8 +122,8 @@ window#waybar {
 #pulseaudio {
     background-color: @background;
     border-radius: 0px 0px 0px 0px;
-    margin-top: 4px;
-    margin-bottom: 4px;
+   /* margin-top: 4px;
+    margin-bottom: 4px; */
     font-weight: bold;
 }
 
@@ -113,10 +133,9 @@ window#waybar {
 
 #tray {
    background-color: @background;
-   border-radius: 0px 5px 5px 0px;
-   margin-bottom: 3px;
-   margin-right: 4px;
-   margin-top: 4px;
+   border-radius: 0px;
+  /* margin-bottom: 3px;
+   margin-top: 4px; */
    padding: 0px 10px;
    padding-top: 3px;
    padding-bottom: 3px;
@@ -135,9 +154,9 @@ window#waybar {
     background-color: @background; 
     font-weight: bold;
     border-radius: 0px 0px 0px 0px;
-    margin-top: 4px;
-   /* margin-right: 4px; */
-    margin-bottom: 4px;
+   /* margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px; */
 }
 
 #custom-power {
@@ -161,23 +180,30 @@ window#waybar {
 #custom-logo {
     font-weight: bold;
     border-radius: 5px 0px 0px 5px;
+  /*  margin-left: 4px; 
     margin-top: 4px; 
-    margin-bottom: 4px;
-    margin-left: 4px;
+    margin-bottom: 4px; */
     background: @background;
 }
 
 #window {
     font-weight: bold;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 0px 0px 0px;
     margin-top: 4px;
     margin-bottom: 4px;
 }
 
 #custom-cava {
-   margin-top: 4px;
-   margin-bottom: 4px;
+  /* margin-top: 4px;
+   margin-bottom: 4px; */
    border-radius: 0px 5px 5px 0px;
    font-weight: bold;
    background: @background;
+}
+
+#custom-right-arrow-dark,
+#custom-left-arrow-dark {
+	color: @background;
+        margin-top: 4px;
+	margin-bottom: 4px;
 }

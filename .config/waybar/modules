@@ -10,13 +10,16 @@
             "4": [],
             "5": [],
 	    "6": [],
-	    "7": [],
-	    "8": []
      },
         "format-icons": {
-          "default": ""
+          "default": "-",
+	  "focused": "|"
          }
      },
+        "river/tags": {
+      "num-tags": 9, 
+      "tag-labels": [ "一" , "二", "三", "四", "五", "六", "七", "八", "九" ]
+   },
      // for names{names}:
     "keyboard-state": {
         "numlock": true,
@@ -112,12 +115,12 @@
         "tooltip-format-disconnected": "MPD (disconnected)"
     },
 
-      "sway/language": {
+      "river/language": {
         "padding": 10,
         "max-length": 4
     },
 
-    "sway/window": {
+    "river/window": {
     "format": " {} ",
     "max-length": 30,
     "separate-outputs": true,
@@ -141,7 +144,7 @@
     },
 
     "custom/logo": {
-      "format": "⏼",
+      "format": "⏻",
        "on-click": "~/.config/rofi/powermenu.sh"
           },
 
@@ -158,5 +161,14 @@
       "cpu": {
         "interval": 1,
         "format": " {usage}%"
-  }
+   },
+
+	"custom/left-arrow-dark": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-dark": {
+		"format": "",
+		"tooltip": false
+	}
 }
