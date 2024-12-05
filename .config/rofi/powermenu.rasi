@@ -28,7 +28,7 @@ element {
     margin: 0px;
     padding: 32px;
     border: 0px;
-    border-radius: 5px;
+    border-radius: 0px;
     background-color: transparent;
 }
 
