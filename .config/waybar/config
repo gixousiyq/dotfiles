@@ -7,22 +7,22 @@
     "position": "top",
     "fixed-center": true,
     "ipc": true,
-    "margin": 5,
+    "margin": 4,
     "reload_style_on_change": true,
-    "height": 28,
+    "height": 26,
 
     "modules-left": [
-    "custom/logo",
-    "clock",
-    "custom/cava"
+      "river/tags",
+      "river/window"
+   // "custom/logo",
+   // "custom/cava"
   ],
-    "modules-center": [
-    "river/tags"
-     // "custom/spotify",
-    ],
+    //"modules-center": [
+     // "custom/spotify"
+   // ],
     "modules-right": [
         "network",
-	"sway/language",
+	"clock",
 	"pulseaudio",
 	"tray",
     ],

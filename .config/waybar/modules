@@ -17,7 +17,7 @@
          }
      },
         "river/tags": {
-      "num-tags": 9, 
+      "num-tags": 7, 
       "tag-labels": [ "一" , "二", "三", "四", "五", "六", "七", "八", "九" ]
    },
      // for names{names}:
@@ -122,7 +122,7 @@
 
     "river/window": {
     "format": " {} ",
-    "max-length": 30,
+    "max-length": 50,
     "separate-outputs": true,
     "offscreen-css" : true,
     "offscreen-css-text": "(inactive)"

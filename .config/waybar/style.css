@@ -5,67 +5,38 @@
 }
 
 window#waybar {
-    background-color: @background;
+    background-color: @color1;
     transition-duration: .5s;
    /* border: 2px solid @color10; */
     border-radius: 0px;
 }
 
+.modules-left {
+	background-color: @background;
+	padding: 0px 0px 0px 0px;
+}
+
+
+.modules-right {
+	background-color: @background;
+	padding: 0px 0px 0px 0px;
+}
+
 #tags {
-   padding-right: 4px;
-   padding-left: 4px;
+  /* padding-right: 4px;
+   padding-left: 4px; */
    font-weight: Bold;
 }
 
 #tags button {
   color: @foreground;
   padding: 0px;
-  margin-left: 2px;
-  margin-right: 2px;
 }
 
 
 #tags button.focused {
-    color: @color1;
-}
-
- #workspaces {
-   padding-right: 4px;
-   padding-left: 4px;
-   margin-right: 4px;
- /*  margin-bottom: 4px;
-   margin-top: 4px; */
-   font-weight: Bold;
-   border-radius: 0px;
-   background: @background;
-}
-
- #workspaces button {
-    color: @foreground;
-   /* border-radius: 10px; */
-   /* background-color: @color1; */
-    padding: 0px;
-    margin-left: 2px;
-    margin-right: 2px;
-} 
-
- #workspaces button.urgent {
-    color: #E67E80;
-}
-
- #workspaces button.focused {
-    color: @color1;
-    /*background-color: @color1; */
-    border-radius: 3px;
-}
- #workspaces button.occupied {
-   color: @background;
-}
-
-#workspaces button:hover {
-   background-color: #E6B9C6;
-   color: black;
-   border-radius: 0px;
+    background: @color1;
+    border-radius: 0px;
 }
 
 #clock,
@@ -74,7 +45,6 @@ window#waybar {
 #network,
 #pulseaudio,
 #language,
-#window,
 #custom-power,
 #custom-spotify,
 #custom-logo,
@@ -83,7 +53,7 @@ window#waybar {
     padding-top: 0px;
     padding-bottom: 0px;
    /* background: @foreground; */
-    color: @color1;
+    color: @foreground;
 }
 
 #clock {
@@ -188,9 +158,10 @@ window#waybar {
 
 #window {
     font-weight: bold;
-    border-radius: 0px 0px 0px 0px;
-    margin-top: 4px;
-    margin-bottom: 4px;
+  /*  margin-top: 4px;
+    margin-bottom: 4px; */
+    background: @color1;
+    color: @foreground;
 }
 
 #custom-cava {
