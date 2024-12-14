@@ -1,13 +1,13 @@
  @import '../../.cache/wal/colors-waybar.css';
  * {
-    font-family:"JetBrainsMono nerd font"; 
+    font-family:"noto sans nerd font"; 
     font-size: 13px;
 }
 
 window#waybar {
     background-color: @background;
     transition-duration: .5s;
-    border: 2px solid @color1;
+    /*border: 2px solid @color1;*/
     border-radius: 10px;
 }
 
@@ -29,6 +29,8 @@ window#waybar {
 #workspaces button.focused {
    /* background: @color1;  */
    color: @color1;
+   border-bottom: 1px solid;
+   border-radius: 0px;
 }
 
 #clock,
@@ -180,7 +182,7 @@ window#waybar {
 
 #custom-notification {
 	color: @color1;
-	margin-right: 2px;
+	margin-right: 4px;
 	background: @background;
 	border-radius: 0px 10px 10px 0px;
 }

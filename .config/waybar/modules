@@ -12,8 +12,12 @@
 	    "6": [],
      },
         "format-icons": {
-          "default": "",
-	  "focused": "",
+          "1": "1",
+	  "2": "2",
+	  "3": "3",
+	  "4": "4",
+	  "5": "5",
+	  "6": "6",
          }
      },
         "river/tags": {
@@ -144,7 +148,7 @@
     },
 
     "custom/logo": {
-      "format": "⏻",
+      "format": "",
        "on-click": "~/.config/rofi/powermenu.sh"
           },
 
