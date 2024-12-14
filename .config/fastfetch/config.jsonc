@@ -1,86 +1,51 @@
 {
 	"logo": {
-	 "type": "sixel",
-         "source": "~/.config/fastfetch/fetch.png",
-	 "width": 28,
-         "height": 15
+	 "type": "kitty",
+         "source": "~/.config/fastfetch/fetch2.jpg",
+	 "width": 19,
+         "height": 10
 	},
 	"display": {
         "separator": " -> ",
-        "constants": [
-            "──────────────────────────────"
+	  "constants": [
+            "██ "
         ]
 },
         "modules": [
 	{
-                    "type": "custom",
-            "format": " {#90}  {#31}  {#32}  {#33}  {#34}  {#35}  {#36}  {#37}  {#38}  {#39}"
-        },
-	{
             "type": "os",
-            "key": "{icon} OS",
+            "key": "{$1}",
             "keyColor": "blue"
         },
 	{
 	    "type": "kernel",
-            "key": "│ ├",
-            "keyColor": "blue"
+            "key": "{$1}",
+            "keyColor": "cyan"
         },
 	{
-	            "type": "packages",
-            "key": "│ ├󰏖",
-            "keyColor": "blue"
-        },
-	{
-            "type": "shell",
-            "key": "│ └",
-            "keyColor": "blue"
+	    "type": "packages",
+            "key": "{$1}󰏖",
+            "keyColor": "red"
         },
 	{
             "type": "wm",
-            "key": " DE/WM",
-            "keyColor": "blue"
+            "key": "{$1}",
+            "keyColor": "yellow"
         },
 	{
-            "type": "lm",
-            "key": "│ ├󰧨",
-            "keyColor": "blue"
-        },
-	{
-            "type": "terminal",
-            "key": "│ ├",
-            "keyColor": "blue"
-        },
-	{
-            "type": "title",
-            "key": "󰌢 PC",
-            "keyColor": "blue"
-        },
-	  {
             "type": "cpu",
-            "key": "│ ├󰻠",
-            "keyColor": "blue"
+            "key": "{$1}󰻠",
+            "keyColor": "green"
         },
         {
             "type": "gpu",
-            "key": "│ ├󰍛",
-            "keyColor": "blue"
-        },
-        {
-            "type": "disk",
-            "key": "│ ├",
-            "keyColor": "blue"
+            "key": "{$1}󰍛",
+            "keyColor": "Magenta"
         },
         {
             "type": "memory",
-            "key": "│ ├󰑭",
-            "keyColor": "blue"
-        },
-	{
-            "type": "display",
-            "key": "│ └󰍹",
-            "keyColor": "blue"
-        },
-
+            "key": "{$1}󰑭",
+            "keyColor": "White"
+        }
     ]
 }

@@ -3,18 +3,18 @@ monitor = 0
 follow = none
 
 width = 250
-height = 100000
+height = 50
 origin = top-right
 offset = 10x15
-scale = 100000
+scale = 50
 
 notification_limit = 20
 
 progress_bar = true
-progress_bar_height = 5000
+progress_bar_height = 50
 progress_bar_frame_width = 2
-progress_bar_min_width = 10000
-progress_bar_max_width = 10000
+progress_bar_min_width = 250
+progress_bar_max_width = 250
 progress_bar_corner_radius = 0
 progress_bar_corners = all
 

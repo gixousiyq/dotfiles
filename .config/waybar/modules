@@ -12,8 +12,8 @@
 	    "6": [],
      },
         "format-icons": {
-          "default": "-",
-	  "focused": "|"
+          "default": "",
+	  "focused": "",
          }
      },
         "river/tags": {
@@ -36,7 +36,7 @@
         "spacing": 10
     },
     "clock": {
-        "format": "󰥔 {:%R}"
+        "format": "{:%R}"
     },
 
     "network": {
@@ -55,7 +55,7 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon} {volume}",
+        "format": "{icon}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
@@ -68,7 +68,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["󰋋 ", "󰋋 ", "󰋋 "]
+            "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
     },
@@ -115,12 +115,12 @@
         "tooltip-format-disconnected": "MPD (disconnected)"
     },
 
-      "river/language": {
+      "sway/language": {
         "padding": 10,
         "max-length": 4
     },
 
-    "river/window": {
+    "sway/window": {
     "format": " {} ",
     "max-length": 50,
     "separate-outputs": true,
@@ -163,12 +163,30 @@
         "format": " {usage}%"
    },
 
-	"custom/left-arrow-dark": {
-		"format": "",
-		"tooltip": false
-	},
-	"custom/right-arrow-dark": {
-		"format": "",
-		"tooltip": false
-	}
+     "custom/separator": {
+     "format": "{icon}",
+     "format-icons": "|",
+     "tooltip": false,
+    },
+
+        "custom/notification": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "󱅫",
+            "none": "󰂚",
+            "dnd-notification": "󰂛",
+            "dnd-none": "󰂛",
+            "inhibited-notification": "󱅫",
+            "inhibited-none": "󰂚",
+            "dnd-inhibited-notification": "󰂛",
+            "dnd-inhibited-none": "󰂛"
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    }
 }

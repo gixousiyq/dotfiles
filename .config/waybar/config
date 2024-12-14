@@ -8,22 +8,28 @@
     "fixed-center": true,
     "ipc": true,
     "margin": 4,
+   // "margin": "4 240 4 240",
     "reload_style_on_change": true,
     "height": 26,
 
     "modules-left": [
-      "river/tags",
-      "river/window"
-   // "custom/logo",
-   // "custom/cava"
+      "custom/logo",
+      "custom/separator",
+      "sway/workspaces",
+      "custom/separator",
+      "custom/cava",
   ],
-    //"modules-center": [
-     // "custom/spotify"
-   // ],
+    "modules-center": [
+       "sway/window",
+    ],
     "modules-right": [
         "network",
-	"clock",
 	"pulseaudio",
+	"sway/language",
+	"custom/separator",
+	"clock",
 	"tray",
+	"custom/separator",
+	"custom/notification",
     ],
 }

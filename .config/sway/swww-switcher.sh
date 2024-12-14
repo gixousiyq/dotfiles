@@ -10,3 +10,6 @@ fi
 ~/.config/sway/swww.sh "$WALLPAPER"
 wal -n -i "$WALLPAPER"
 $HOME/.cache/wal/colors.sh
+
+pkill swaync
+swaync

@@ -5,38 +5,30 @@
 }
 
 window#waybar {
-    background-color: @color1;
+    background-color: @background;
     transition-duration: .5s;
-   /* border: 2px solid @color10; */
-    border-radius: 0px;
+    border: 2px solid @color1;
+    border-radius: 10px;
 }
 
-.modules-left {
-	background-color: @background;
-	padding: 0px 0px 0px 0px;
-}
-
-
-.modules-right {
-	background-color: @background;
-	padding: 0px 0px 0px 0px;
-}
-
-#tags {
+#workspaces {
   /* padding-right: 4px;
    padding-left: 4px; */
    font-weight: Bold;
+   background: @background;
+   margin-top: 2px;
+   margin-bottom: 2px;
 }
 
-#tags button {
+#workspaces button {
   color: @foreground;
   padding: 0px;
 }
 
 
-#tags button.focused {
-    background: @color1;
-    border-radius: 0px;
+#workspaces button.focused {
+   /* background: @color1;  */
+   color: @color1;
 }
 
 #clock,
@@ -48,12 +40,15 @@ window#waybar {
 #custom-power,
 #custom-spotify,
 #custom-logo,
-#custom-cava {
+#custom-cava,
+#custom-notification {
     padding: 0 10px;
     padding-top: 0px;
     padding-bottom: 0px;
    /* background: @foreground; */
     color: @foreground;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 #clock {
@@ -79,8 +74,9 @@ window#waybar {
 }
 
 #network {
+	  color: @color1;
 	  background-color: @background;
-	  border-radius: 5px 0px 0px 5px;
+	  border-radius: 0px;
          /* margin-top: 4px;
           margin-bottom: 4px; */
 } 
@@ -90,6 +86,7 @@ window#waybar {
 } 
 
 #pulseaudio {
+    color: @color1;
     background-color: @background;
     border-radius: 0px 0px 0px 0px;
    /* margin-top: 4px;
@@ -104,8 +101,8 @@ window#waybar {
 #tray {
    background-color: @background;
    border-radius: 0px;
-  /* margin-bottom: 3px;
-   margin-top: 4px; */
+   margin-bottom: 2px;
+   margin-top: 2px;
    padding: 0px 10px;
    padding-top: 3px;
    padding-bottom: 3px;
@@ -133,8 +130,8 @@ window#waybar {
     background-color: #343F44;
     color: #A7C080;
     border-radius: 15px;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     margin-right: 3px;
 }
 
@@ -148,33 +145,42 @@ window#waybar {
 }
 
 #custom-logo {
+    color: @color1;
     font-weight: bold;
-    border-radius: 5px 0px 0px 5px;
-  /*  margin-left: 4px; 
-    margin-top: 4px; 
+   /* border-radius: 0px; */
+    margin-left: 2px; 
+   /* margin-top: 4px; 
     margin-bottom: 4px; */
     background: @background;
+    border-radius: 10px 0px 0px 10px;
 }
 
 #window {
     font-weight: bold;
-  /*  margin-top: 4px;
-    margin-bottom: 4px; */
-    background: @color1;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background: @background;
     color: @foreground;
 }
 
 #custom-cava {
   /* margin-top: 4px;
    margin-bottom: 4px; */
-   border-radius: 0px 5px 5px 0px;
+   border-radius: 0px;
    font-weight: bold;
    background: @background;
+   color: @color1;
 }
 
-#custom-right-arrow-dark,
-#custom-left-arrow-dark {
-	color: @background;
-        margin-top: 4px;
-	margin-bottom: 4px;
+#custom-separator {
+	background: @background;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+#custom-notification {
+	color: @color1;
+	margin-right: 2px;
+	background: @background;
+	border-radius: 0px 10px 10px 0px;
 }

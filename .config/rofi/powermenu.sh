@@ -3,8 +3,8 @@
 chosen=$(printf "\n\n\n" | rofi -dmenu -i -theme-str '@import "~/.config/rofi/powermenu.rasi"')
 
 case "$chosen" in
-	"") i3lock ;;
-	"") qtile cmd-obj -o cmd -f shutdown ;;
+	"") swaylock ;;
+	"") swaymsg exit ;;
 	"") reboot ;;
 	"") shutdown now ;;
 	*) exit 1 ;;

@@ -8,15 +8,15 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term foot
+set $term kitty
 # Your preferred application launcher
 set $menu rofi -show drun
 # Background
-set $swww pkill rofi || ~/.config/sway/swww-switcher.sh | "$HOME/.config/dunst/launch.sh"
+set $swww pkill rofi || ~/.config/sway/swww-switcher.sh
 
 ### Appearance
 # window corner radius in px
-corner_radius 0
+corner_radius 5
 default_border pixel 2
 default_floating_border pixel 2
 
@@ -55,11 +55,10 @@ scratchpad_minimize disable
 ### Idle configuration
 #
 # Example configuration:
-#
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
+ exec swayidle -w \
+    timeout 300 'swaylock -f \
+    imeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+    before-sleep 'swaylock -f
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -241,7 +240,8 @@ xwayland enable
 bar swaybar_command waybar
 # launch swww with sway
 exec --no-startup-id swww-daemon --format xrgb
-exec --no-startuo-id ~/.config/dunst/launch.sh
+# swaync
+exec --no-startuo-id swaync
 include "$HOME/.cache/wal/colors-sway"
 
 # client.class    <border> <background> <text>      <indicator> <child_border>

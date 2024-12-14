@@ -7,16 +7,16 @@
 
 window {
     width: 420px;
-    height: 300px;
+    height: 332px;
     border: 2;
-    border-radius: 0;
+    border-radius: 10;
     border-color: @color1;
 }
 
 mainbox {
    background-color: transparent;
    padding: 20px;
-   children: [ "inputbar", "message", "listview", "mode-switcher" ];
+   children: [ "inputbar", "message", "mode-switcher", "listview" ];
 }
 
 message {
@@ -25,10 +25,12 @@ message {
 
 inputbar {
     text-color: @foreground;
-    padding: 10px;
+    padding: 6px;
     margin: 10px;
     background-color: @background;
     border-radius: 10px;
+    border-color: @color1;
+    border: 2;
 }
 
 entry,prompt,case-indicator {
@@ -41,6 +43,9 @@ listview {
     lines: 6;
     padding: 8px;
     background-color: transparent;
+    border: 2;
+    border-color: @color1;
+    border-radius: 10px;
 }
 
 prompt {
@@ -54,7 +59,7 @@ element {
     padding: 8px;
     color: @foreground;
     font: inherit;
-    border-radius: 0;
+    border-radius: 5;
     background-color: transparent;
 }
 
@@ -64,7 +69,7 @@ element-text {
 }
 
 element selected.normal {
-   background-color: @color2;
+   background-color: @color1;
    color: @background;
 }
 
