@@ -4,6 +4,7 @@
 
 # what i use
 
+- CachyOS
 - Sway (swayfx)
 - Kitty
 - Rofi `rofi-wayland`
