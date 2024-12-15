@@ -1,5 +1,5 @@
 {
-       "sway/workspaces": {
+       "hyprland/workspaces": {
         "disable-scroll": false,
         "all-outputs": true,
         "format": "{icon}",
@@ -119,12 +119,12 @@
         "tooltip-format-disconnected": "MPD (disconnected)"
     },
 
-      "sway/language": {
+      "hyprland/language": {
         "padding": 10,
         "max-length": 4
     },
 
-    "sway/window": {
+    "hyprland/window": {
     "format": " {} ",
     "max-length": 50,
     "separate-outputs": true,
@@ -148,7 +148,7 @@
     },
 
     "custom/logo": {
-      "format": "",
+      "format": "󰀻",
        "on-click": "~/.config/rofi/powermenu.sh"
           },
 

@@ -15,17 +15,17 @@
     "modules-left": [
       "custom/logo",
       "custom/separator",
-      "sway/workspaces",
+      "hyprland/workspaces",
       "custom/separator",
       "custom/cava",
   ],
     "modules-center": [
-       "sway/window",
+       "hyprland/window",
     ],
     "modules-right": [
         "network",
 	"pulseaudio",
-	"sway/language",
+	"hyprland/language",
 	"custom/separator",
 	"clock",
 	"tray",
