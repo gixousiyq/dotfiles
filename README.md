@@ -4,8 +4,8 @@
 
 # what i use
 
-- CachyOS
-- Sway (swayfx)
+- CachyOS `distro`
+- Hyprland, Hypridle, Hyprlock
 - Kitty
 - Rofi `rofi-wayland`
 - Swaync
