@@ -1,7 +1,8 @@
 <div align="center">
     <h1>Dotfiles</h1>
 </div>
-## what i use
+
+# what i use
 
 - Sway (swayfx)
 - Kitty
