@@ -15,5 +15,8 @@
 - neovim `text editor`
 - grim and slurp `screen shot`
 - nwg-look, Orchis-theme `GTK`
+- fish `shell`
 
 # other
+
+[Backgrounds](https://github.com/b65t/Background)
