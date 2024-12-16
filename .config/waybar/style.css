@@ -21,10 +21,13 @@ window#waybar {
 }
 
 #workspaces button {
-  color: @foreground;
-  padding: 0px;
+   color: @color2;
+   padding: 0px;
 }
 
+#workspaces button.empty {
+   color: @foreground;
+}
 
 #workspaces button.active {
    /* background: @color1;  */
