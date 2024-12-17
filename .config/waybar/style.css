@@ -14,7 +14,7 @@ window#waybar {
 #workspaces {
   /* padding-right: 4px;
    padding-left: 4px; */
-   font-weight: Bold;
+   font-weight: bold;
    background: @background;
    margin-top: 2px;
    margin-bottom: 2px;
@@ -181,6 +181,7 @@ window#waybar {
 	background: @background;
 	margin-top: 2px;
 	margin-bottom: 2px;
+	color: #49464f;
 }
 
 #custom-notification {
