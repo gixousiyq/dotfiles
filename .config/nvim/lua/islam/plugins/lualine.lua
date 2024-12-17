@@ -7,7 +7,7 @@ return {
     local theme = {
     options = {
     component_separators = '',
-    section_separators = { left = ' ', right = ' ' },
+    section_separators = { left = '', right = '' },
   },
   sections = {
    -- lualine_a = { { 'mode', separator = { left = '' }, right_padding = 2 } },
