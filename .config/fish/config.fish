@@ -4,11 +4,11 @@ if status is-interactive
 end
 
 function fish_prompt
-    set_color blue
-    printf " %s" (prompt_pwd)
-    echo ' 
+     set_color blue
+        printf " %s" (prompt_pwd)
+        echo ' 
  > '
-    end
+end
 
 alias ls="eza --icons"
 alias tree="eza --icons --tree"
