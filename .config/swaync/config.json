@@ -49,11 +49,10 @@
   },
   "widgets": [
     "title",
+    "volume",
     "notifications",
     "mpris",
-    "buttons-grid",
-    "volume",
-    "backlight"
+    "buttons-grid"
   ],
   "widget-config": {
     "inhibitors": {
@@ -74,7 +73,7 @@
       "text": "Label Text"
     },
     "mpris": {
-      "image-size": 96,
+      "image-size": 80,
       "image-radius": 12
     },
     "volume": {
