@@ -4,7 +4,7 @@
 
 # what i use
 
-- CachyOS `distro`
+- Fedora `distro`
 - Hyprland, Hypridle, Hyprlock `window manager, lock screen`
 - Kitty `term`
 - Rofi `rofi-wayland`
@@ -18,5 +18,7 @@
 - fish `shell`
 
 # other
+
+i use shyfox for the firefox [theme](https://github.com/Naezr/ShyFox)
 
 [Backgrounds](https://github.com/b65t/Background)
