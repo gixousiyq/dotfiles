@@ -2,6 +2,7 @@
  * {
     font-family:"noto sans nerd font"; 
     font-size: 13px;
+    min-height: 0;
 }
 
 window#waybar {
@@ -23,10 +24,12 @@ window#waybar {
 #workspaces button {
    color: @color2;
    padding: 0px;
+   font-weight: bold;
 }
 
 #workspaces button.empty {
    color: @foreground;
+   font-weight: bold;
 }
 
 #workspaces button.active {
@@ -34,6 +37,7 @@ window#waybar {
    color: @color1;
    border-bottom: 1px solid;
    border-radius: 0px;
+   font-weight: bold;
 }
 
 #clock,
@@ -46,6 +50,9 @@ window#waybar {
 #custom-spotify,
 #custom-logo,
 #custom-cava,
+#custom-picker,
+#custom-weather,
+#custom-screen-shot,
 #custom-notification {
     padding: 0 10px;
     padding-top: 0px;
@@ -67,15 +74,17 @@ window#waybar {
 #cpu {
     font-weight: bold;
     border-radius: 0;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: @color1;
 }
 
 #memory {
     font-weight: bold;
     border-radius: 0px;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: @color1;
 }
 
 #network {
@@ -84,6 +93,7 @@ window#waybar {
 	  border-radius: 0px;
          /* margin-top: 4px;
           margin-bottom: 4px; */
+          font-size: 14px;
 } 
 
  #network.disconnected {
@@ -97,6 +107,7 @@ window#waybar {
    /* margin-top: 4px;
     margin-bottom: 4px; */
     font-weight: bold;
+    font-size: 14px;
 }
 
 #pulseaudio.muted {
@@ -158,6 +169,7 @@ window#waybar {
     margin-bottom: 4px; */
     background: @background;
     border-radius: 10px 0px 0px 10px;
+    font-size: 18px;
 }
 
 #window {
@@ -172,9 +184,9 @@ window#waybar {
   /* margin-top: 4px;
    margin-bottom: 4px; */
    border-radius: 0px;
-   font-weight: bold;
    background: @background;
    color: @color1;
+   min-height: 0px;
 }
 
 #custom-separator {
@@ -189,4 +201,33 @@ window#waybar {
 	margin-right: 4px;
 	background: @background;
 	border-radius: 0px 10px 10px 0px;
+	font-size: 14px;
+}
+
+#custom-picker {
+        color: @color1;
+}
+
+#custom-playerctl-forward,
+#custom-playerctl-play,
+#custom-playerctl-backward {
+	padding: 0 5px;
+}
+
+#custom-playerctl-forward,
+#custom-playerctl-backward {
+	color: @color1;
+}
+
+#custom-playerctl-play {
+	color: @foreground;
+}
+
+#custom-weather {
+	color: @color1;
+	font-weight: bold;
+}
+
+#custom-screen-shot {
+	color: @color1;
 }

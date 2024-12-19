@@ -11,18 +11,19 @@
             "5": [],
 	    "6": [],
             "7": [],
+	    "8": [],
      },
         "format-icons": {
-	    "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "6": "",
-            "7": "",
-            "8": "",
-            "9": "",
-            "10": "",
+	    "1": "一",
+            "2": "二",
+            "3": "三",
+            "4": "四",
+            "5": "五",
+            "6": "六",
+            "7": "七",
+            "8": "八",
+            "9": "九",
+            "10": "十",
 	}
      },
         "river/tags": {
@@ -126,7 +127,8 @@
 
       "hyprland/language": {
         "padding": 10,
-        "max-length": 4
+	"format-en": "US",
+	"format-ar": "AR",
     },
 
     "hyprland/window": {
@@ -153,9 +155,9 @@
     },
 
     "custom/logo": {
-      "format": "󰗘",
+      "format": "",
        "on-click": "~/.config/rofi/powermenu.sh"
-          },
+   },
 
 "custom/cava": {
     "exec": "~/.config/scripts/cava.sh",
@@ -197,5 +199,59 @@
         "on-click": "swaync-client -t -sw",
         "on-click-right": "swaync-client -d -sw",
         "escape": true
+    },
+
+    "custom/picker": {
+      "tooltip": false,
+      "format": "",
+      "on-click": "hyprpicker -a",
+    },
+
+    "group/music_controller": {
+  "orientation": "horizontal",
+  "modules": [
+    "custom/playerctl-backward",
+    "custom/playerctl-play",
+    "custom/playerctl-forward"
+    ]
+},
+    "custom/playerctl-backward": {
+        "format": "\uF04A",
+        "tooltip": false,
+        "on-click": "playerctl previous",
+        "on-scroll-up": "playerctl volume .05+",
+        "on-scroll-down": "playerctl volume .05-"
+    },
+    "custom/playerctl-play": {
+        "format": "{icon}",
+        "return-type": "json",
+        "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl volume .05+",
+        "on-scroll-down": "playerctl volume .05-",
+        "format-icons": {
+            "Playing": "<span>\uF04C</span>",
+            "Paused": "<span>\uF04B</span>",
+            "Stopped": "<span>\uF04B</span>"
+        }
+    },
+    "custom/playerctl-forward": {
+        "format": "\uF04E",
+        "tooltip": false,
+        "on-click": "playerctl next",
+        "on-scroll-up": "playerctl volume .05+",
+        "on-scroll-down": "playerctl volume .05-"
+    },
+
+     "custom/weather": {
+        "exec": "~/.config/scripts/weather.sh -o",
+        "exec-if": "ping wttr.in -c 1",
+        "interval": 3600
+    },
+
+    "custom/screen-shot": {
+        "format": "󰄀",
+        "on-click": "~/.config/scripts/partial-screenshot.sh",
+        "tooltip": false,
     }
 }

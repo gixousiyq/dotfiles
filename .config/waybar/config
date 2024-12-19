@@ -8,19 +8,22 @@
     "fixed-center": true,
     "ipc": true,
     "margin": 4,
+    "spacing": 0,
    // "margin": "4 240 4 240",
     "reload_style_on_change": true,
-    "height": 26,
+    "height": 29,
 
     "modules-left": [
       "custom/logo",
       "custom/separator",
-      "hyprland/workspaces",
+      "group/music_controller",
       "custom/separator",
-      "custom/cava",
+      "custom/picker",
+      "custom/screen-shot",
+      "custom/weather",
   ],
     "modules-center": [
-       "hyprland/window",
+       "hyprland/workspaces",
     ],
     "modules-right": [
         "network",
