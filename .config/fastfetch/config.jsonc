@@ -1,9 +1,9 @@
 {
 	"logo": {
-	 "type": "kitty",
-         "source": "~/.config/fastfetch/fetch3.jpg",
+	 "type": "small",
+  //"source": "~/.config/fastfetch/fetch3.jpg",
 	 "width": 17,
-         "height": 9
+   "height": 9
 	},
 	"display": {
         "separator": " -> ",
@@ -14,12 +14,12 @@
         "modules": [
 	{
             "type": "os",
-            "key": "{$1}",
+            "key": "{$1}",
             "keyColor": "blue"
         },
 	{
 	    "type": "kernel",
-            "key": "{$1}",
+            "key": "{$1}",
             "keyColor": "cyan"
         },
 	{
@@ -33,19 +33,14 @@
             "keyColor": "yellow"
         },
 	{
-            "type": "cpu",
-            "key": "{$1}󰻠",
+            "type": "shell",
+            "key": "{$1}",
             "keyColor": "green"
         },
         {
-            "type": "gpu",
-            "key": "{$1}󰍛",
+            "type": "terminal",
+            "key": "{$1}",
             "keyColor": "Magenta"
-        },
-        {
-            "type": "memory",
-            "key": "{$1}󰑭",
-            "keyColor": "White"
         }
     ]
 }
