@@ -5,7 +5,7 @@
 
 # weather location (space = "+")
 # example: "London", "Salt+Lake+City"
-weather_location=""
+weather_location="oran"
 
 # weather units (default = "?m")
 # ?u - USCS (farenheit, mph)

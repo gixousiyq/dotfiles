@@ -12,7 +12,8 @@ inputbar {
 
 window {
     padding: 0;
-    height: 264px;
+    height: 266px;
+    width: 450px;
 }
 
 listview {
