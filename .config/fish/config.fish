@@ -13,3 +13,8 @@ end
 alias ls="eza --icons"
 alias tree="eza --icons --tree"
 alias cl="clear"
+alias nv="nvim"
+alias dnf="sudo dnf update"
+alias dnfi="sudo dnf install"
+alias dnfr="sudo dnf remove"
+alias fm="yazi"

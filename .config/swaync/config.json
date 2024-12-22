@@ -100,15 +100,15 @@
 
 		},
 		{
-		    "label": "󰸉 Background",
+		    "label": " Background",
 		    "command": "waypaper"
 		},
 	        {
-		    "label": " sunseton",
+		    "label": "󰃠 sunseton",
 		    "command": "hyprsunset"
 		},
 		{
-		    "label": " sunsetoff",
+		    "label": "󰃠 sunsetoff",
 		    "command": "pkill hyprsunset"
 		}
 	     ]

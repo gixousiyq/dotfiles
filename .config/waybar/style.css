@@ -8,7 +8,6 @@
 window#waybar {
     background-color: @background;
     transition-duration: .5s;
-    /*border: 2px solid @color1;*/
     border-radius: 10px;
 }
 
@@ -53,9 +52,9 @@ window#waybar {
 #custom-weather,
 #custom-screen-shot,
 #custom-notification {
-    padding: 0 10px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+   padding: 0 10px;
+   padding-top: 0px;
+   padding-bottom: 0px;
    /* background: @foreground; */
     color: @foreground;
     margin-top: 2px;

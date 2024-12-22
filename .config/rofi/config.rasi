@@ -1,10 +1,10 @@
 configuration {
     drun-display-format: "{icon} {name}";
-    show-icons: false;
-    display-drun: " ";
-    display-run: " ";
-    display-filebrowser: " ";
-    display-window: " ";
+    show-icons: true;
+    display-drun: "  drun";
+    display-run: "  run";
+    display-filebrowser: "  filebrowse";
+    display-window: "  windows";
     modi: "drun,run,window,filebrowser";
     location: 2;
 }
